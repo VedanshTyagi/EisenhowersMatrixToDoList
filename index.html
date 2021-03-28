@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="formContainer">
+        <input type="text" class="work" placeholder="Enter Task... ">
+        <div class="container">
+        <div> <div>Is it Important</div> <input class="toggle I" type="checkbox"></div>
+        <div> <div>Is it Urgent</div> <input class="toggle U" type="checkbox"></div>
+        <button class="add" onclick="add()">+</button>
+        </div>
+    </div>
+        
+    </form>
+    <div class="matrix">
+        <div class="first">Do it now <span class="taskList OIU"></span> </div>
+        <div class="second">Schedule <span class="taskList OI"></span> </div>
+        <div class="third">Delegate <span class="taskList OU"></span> </div>
+        <div class="fourth">Do at last <span class="taskList O"></span> </div>
+        <span><button onclick="doneClear()" ondblclick="Clear()">Clear</button></span>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
